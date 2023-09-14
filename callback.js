@@ -25,9 +25,9 @@ const greeting = (callback) => {
 // })
 
 // * Call a greeting function with passing in an annonymous arrow function
-// greeting(() => {
-//   console.log('Men from annonymous arrow function')
-// })
+greeting(() => {
+  console.log('Men from annonymous arrow function')
+})
 
 // * Callback function with parameter
 const greeting2 = (callback) => {
@@ -35,9 +35,9 @@ const greeting2 = (callback) => {
   callback('Fern')
 }
 
-// greeting2((name) => {
-//   console.log(`hello from ${name}`)
-// })
+greeting2((name) => {
+  console.log(`hello from ${name}`)
+})
 
 const originalArr = [1, 2, 3, 4]
 
