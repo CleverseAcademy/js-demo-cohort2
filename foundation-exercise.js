@@ -59,6 +59,23 @@ const compoundedReturn2 = (amount, interestPercent, periods) => {
   return amount * (1 + interestPercent / 100) ** periods
 }
 
+// *********** 13 ***********
+const mean = (arr) => {
+  let sum = 0
+
+  const isAllNumber = arr.every((val) => typeof val === 'number')
+
+  if (!isAllNumber) return null
+
+  arr.forEach((n) => {
+    sum += n
+  })
+
+  return sum / arr.length
+}
+
+console.log(mean([1, 2, '3', 4]))
+
 // *********** 14 ***********
 const mid = (arr) => {
   if (arr.length === 1) return arr
